@@ -1,5 +1,5 @@
 /*
-*   Takes three integers as input and sort them in ascending order.
+*   Takes three integers as input and sorts them in ascending order.
 *   
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
