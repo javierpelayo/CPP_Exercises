@@ -1,10 +1,9 @@
 /*
-*   Takes two integers as input and determines the smaller, larger, sum,
-*   difference, product, and ratio of these values & outputs them.
+*   Takes three integers as input and sort them in ascending order.
 *   
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
-*   Section: Chapter 3, Exercise 4
+*   Section: Chapter 3, Exercise 6
 */
 #include<iostream>
 #include<string>
