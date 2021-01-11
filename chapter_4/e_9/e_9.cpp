@@ -4,7 +4,7 @@
 *   
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
-*   Section: Chapter 4, Exercise 8
+*   Section: Chapter 4, Exercise 9
 *
 *   Compile: g++ -std=c++11 name.cpp -o name
 *
