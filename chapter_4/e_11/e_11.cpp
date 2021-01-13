@@ -9,8 +9,11 @@
 */
 #include<iostream>
 #include<vector>
+#include<time.h>
 
 int main(){
+    clock_t clkStart = clock();
+    clock_t clkFinish;
     int comp_c = 0; // increases if number is composite
     std::vector<int> primes = {2};
     for (int i = 3; i < 100; ++i) {
@@ -24,9 +27,13 @@ int main(){
         }
         comp_c = 0;
     }
+    clkFinish = clock();
 
     for(int x : primes)
-        std::cout << x << std::endl;
+        std::cout << x << " ";
+    std::cout << std::endl;
+
+    std::cout << "Run Time: " << (clkFinish - clkStart) << std::endl;
 
     return 0;
 }
