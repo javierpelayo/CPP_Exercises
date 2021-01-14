@@ -1,5 +1,5 @@
 /*
-*   Finds all the prime numbers up to n using the "Sieve of Eratosthenes".
+*   Finds all the n prime numbers using the "Sieve of Eratosthenes".
 *   
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
@@ -27,7 +27,7 @@ int main() {
     std::cout << "Enter a number n to find first n primes:\n";
     std::cin >> n;
 
-    int control = 20; // adjust for larger amt of primes
+    int control = 20; // increase if looking for more than 10m primes.
     int upto = (n * control); // everything under this number will have the primes we want
     std::vector<bool> comps(upto + 1);
 

@@ -1,5 +1,5 @@
 /*
-*   Finds all the prime numbers between 1 and max.
+*   Finds all the prime numbers between 1 and max using trials by division.
 *   
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup

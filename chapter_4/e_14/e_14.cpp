@@ -46,7 +46,7 @@ int main() {
 
     for(int x : primes)
         std::cout << x << " ";
-    std::cout << "\nCount: " << count << "\n \n";
+    std::cout << "\nPrime Count: " << count << "\n \n";
 
     std::cout << "Run Time: " << (clkFinish - clkStart) << std::endl;
 
