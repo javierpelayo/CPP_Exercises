@@ -33,6 +33,7 @@ int main() {
     for (int k = 2; k < 100; ++k) {
         if(comps[k] == 0) {
             primes.push_back(k);
+            ++count;
         }
     }
 
@@ -40,7 +41,7 @@ int main() {
 
     for(int x : primes)
         std::cout << x << " ";
-    std::cout << "\n \n";
+    std::cout << "\nCount: " << count << "\n \n";
 
     std::cout << "Run Time: " << (clkFinish - clkStart) << std::endl;
 

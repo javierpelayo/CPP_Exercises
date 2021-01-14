@@ -1,9 +1,9 @@
 /*
-*   Finds all the prime numbers between 1 and max using the "Sieve of Eratosthenes".
+*   Finds all the prime numbers up to n using the "Sieve of Eratosthenes".
 *   
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
-*   Section: Chapter 4, Exercise 14
+*   Section: Chapter 4, Exercise 15
 *
 *   Compile: g++ -std=c++11 name.cpp -o name
 */
@@ -18,36 +18,38 @@ void mark_comp(int k, int m, std::vector<bool>& c) {
 }
 
 int main() {
-    clock_t clkStart = clock();
+    clock_t clkStart;
     clock_t clkFinish;
-    int max = 0;
     int count = 0;
     std::vector<int> primes;
+    int n = 0;
 
-    std::cout << "Enter a max number to find primes:\n";
-    std::cin >> max;
+    std::cout << "Enter a number n to find first n primes:\n";
+    std::cin >> n;
 
-    std::vector<bool> comps(max + 1);
+    int control = 20; // adjust for larger amt of primes
+    int upto = (n * control); // everything under this number will have the primes we want
+    std::vector<bool> comps(upto + 1);
 
-    for(int i = 2; i*i < max; ++i) {
+    clkStart = clock();
+    for(int i = 2; i*i < upto; ++i) {
         if(comps[i] == 0){
-            mark_comp(i, max, comps);
+            mark_comp(i, upto, comps);
         }
     }
-
-    for (int k = 2; k < max; ++k) {
+    for (int k = 2; n != primes.size(); ++k) {
         if(comps[k] == 0) {
             primes.push_back(k);
             ++count;
         }
     }
-
     clkFinish = clock();
 
     for(int x : primes)
         std::cout << x << " ";
-    std::cout << "\nCount: " << count << "\n \n";
 
+    std::cout << "\nComposite Size:" << comps.size() << std::endl;
+    std::cout << "\nPrime Count: " << count << std::endl;
     std::cout << "Run Time: " << (clkFinish - clkStart) << std::endl;
 
     return 0;
