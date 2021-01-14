@@ -18,8 +18,6 @@ int main() {
     int prev_dup_c = 0;
     int top = 0;
     std::vector<int> series;
-    std::vector<int> duplicate;
-    std::vector<int> dupl_count;
 
     std::cout << "Enter a series of positive integers separated by whitespace (CTRL + D to stop):\n";
     while (std::cin >> input) {
