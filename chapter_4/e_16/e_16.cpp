@@ -1,6 +1,7 @@
 /*
 *   Finds the mode of a series of positive integers.
-*   
+*   Mode = number that occurs the most out of a series.   
+*
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
 *   Section: Chapter 4, Exercise 16
