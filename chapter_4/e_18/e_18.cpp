@@ -1,5 +1,5 @@
 /*
-*   Solves quadratic equations using the quadratic formula.   
+*   Solves regular and complex quadratic equations using the quadratic formula.
 *
 *   Book: Programming Principles and Practice Using C++ 2nd Edition
 *   Author: Bjarne Stroustrup
@@ -14,7 +14,7 @@
 *   Using Newton's Method and a function of the form f(x) = x^2 - n
 *   we can find the sqrt such that n > 0.
 *
-*   I'm aware that sqrt exists from cmath.
+*   Disclaimer: I'm aware that sqrt exists from cmath.
 *   
 *   xk+1 = xk - (f(xk)/f'(xk))
 *   reduces to:
