@@ -13,8 +13,8 @@
 #include<fstream>
 #include<sstream>
 #include<vector>
-#include<ctype.h>
-#include<iomanip>
+#include<ctype.h> // unsetf()
+#include<iomanip> // setw()
 
 int main() {
     std::vector<int> integers;
